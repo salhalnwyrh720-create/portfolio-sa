@@ -1,0 +1,130 @@
+body{
+    font-family: sans-serif;     /*نوع الخط*/
+    padding: 0px; /*يزيل اي مساحه داخليه */
+    margin: 0px; /*يزيل الهوامش */
+    background-color: #f4f4f4; /*يحدد لون الخلفيه */
+}
+.container /* صنف عام لا حاويه مركزيه  */
+{
+    width: 80%; 
+    margin: auto; /* مركز الحاوية افقيا  */
+     overflow: hidden; /* يخفي الفائض */
+} 
+ul{  /* يستهدف القوائم  */
+    margin: 0%;/*  يلغيان الهوامش */
+    padding: 0%;/*  */
+}
+header{   /* لون الخلفيه  يطبق على عنصر  */
+    background: rgb(146, 200, 210);/*لون الخلفيه   */
+    color: rgb(232, 233, 230); /* لون النص */
+    padding-top: 30px; /* مسافه داخليه  */
+    min-height: 70px;/* الحد الادنى للارتفاع  */
+    border-bottom: yellow 5px solid;/* حد يكون باللون الاصفر  */
+}
+header a { /* كل الروابط داخل الهيدرا  */
+    color: white;
+    text-decoration: none;/* يزيل الخط التحتي  */
+    font-size: 20px;/* حجم نص الرابط  */ 
+}
+header li { /* كل عناصر القائمه هنا  */
+    float: left;/* يجعل كل عنصر يطفو لليمين  */
+    display: inline;
+    padding: 0 20px 0 20px;/* مسافه داخليه  */
+}
+header #brand{ /* العنصر الذي يحتوي على شعار  */
+    float: right; /* الشعار لليمين  */
+}
+header #brand h1{/* عنوان المستوى الاول  */
+    margin: 0;
+    color: yellow; /* يجعل نص العنوان اصفر  */
+}
+header nav { /* عنصر الملاحه داخل الهيدرا  */
+    float: left; /* يطفو لليسار  */
+    margin-top: 10px; /* يضيف مسافه من الاعلى  */
+}
+header .curent a{/* يستهدف الربط داخل عنصر  */
+    color: yellow; 
+    font-weight: bold; /* يجعل اللون غامق  */
+}
+header a:hover{ /* رابط الهيدار ياشر بالمؤشر  */
+    color: white;
+    font-weight: bold;
+}
+#cass{/* قسم رئيسي */
+    min-height: 800px;
+    background: url("../img/5.png") no-repeat center; /* يضع صورة خلفيه  */
+    background-size: cover;/* يجعل الصورة تغطي كامل العنصر  */
+    
+}
+#newsletter{/* قسم الاشتراك  */
+    padding: 15px;
+    color: white;
+    background: rgb(87, 8, 222);
+}
+#newsletter h1{/* عنوان داخل النشره  */
+    float: right;
+}
+#newsletter form{ /* النموذج داخل النشرة  */
+    float: left;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]  /*  يستهدف قل البريد الالكتوني داخل النشره */
+{
+    background-color: black;
+    padding: 10px;
+    height: 25px;
+    width: 250px;
+}
+.button {
+    height: 38px;
+    background: rgb(234, 233, 232);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+footer /* تذبيل الصفحه  */
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: olivedrab;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+@media(max-width:768px) /* بدايه قاعدة تتطبق عندما يفتحخ على هاتف  */
+{
+    header #brand,
+    header nav,
+     header nav li,
+     #newsletter h1,
+     #newsletter form,
+     #boxes .box
+     {
+        float: none;
+        text-align: center;   
+        width: 100%;
+     }
+    header{
+        padding-bottom: 20px;
+    }
+    #newsletter .button
+    {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

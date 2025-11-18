@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقعي التعليمي</title>
+  <link rel="stylesheet" href="m1.css">
+</head>
+<body>
+  <!-- الهيدر -->
+  <header>
+    <h1>موقعي التعليمي</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <!-- الصفحة الرئيسية -->
+  <section id="home" class="hero">
+    <h2>مرحبًا بك في موقعي التعليمي</h2>
+    <p>تعلم أساسيات HTML و CSS بسهولة مع أمثلة عملية.</p>
+  </section>
+
+  <!-- قسم HTML -->
+  <section id="html" class="content">
+    <h2>أساسيات HTML</h2>
+    <p>HTML هي لغة ترميز تُستخدم لبناء هيكل صفحات الويب.</p>
+    <ul>
+      <li>&lt;h1&gt; ... &lt;h6&gt; : العناوين</li>
+      <li>&lt;p&gt; : الفقرات</li>
+      <li>&lt;a&gt; : الروابط</li>
+      <li>&lt;img&gt; : الصور</li>
+    </ul>
+    <pre>
+&lt;h1&gt;مرحبا بالعالم&lt;/h1&gt;
+&lt;p&gt;هذه فقرة نصية&lt;/p&gt;
+    </pre>
+  </section>
+
+  <!-- قسم CSS -->
+  <section id="css" class="content">
+    <h2>أساسيات CSS</h2>
+    <p>CSS تُستخدم لتنسيق صفحات الويب وإضافة الألوان والتصاميم.</p>
+    <ul>
+      <li>color: لتغيير لون النص</li>
+      <li>background-color: لتغيير خلفية العنصر</li>
+      <li>margin / padding: للتحكم في المسافات</li>
+    </ul>
+    <pre>
+h1 {
+  color: blue;
+  text-align: center;
+}
+p {
+  background-color: #eee;
+  padding: 10px;
+}
+    </pre>
+  </section>
+
+  <!-- تواصل -->
+  <section id="contact" class="content">
+    <h2>تواصل معي</h2>
+    <p>يمكنك مراسلتي عبر البريد الإلكتروني:</p>
+    <a href="mailto:example@mail.com" class="btn">راسلني</a>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* إعدادات أساسية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tahoma", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+  background: #0077b6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* قسم الترحيب */
+.hero {
+  background: #caf0f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* المحتوى */
+.content {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.content ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* زر */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #023e8a;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
